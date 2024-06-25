@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="headbox">
+                    <div class="logo">
+                        <img id="logopersonal" src="img/iconcr.png" alt="logoclary">
+                    </div>
+                    <h1>Alura Challange: Encriptador de Texto</h1>
+                </div>
+            </header>
+
+            <main>
+                <div class="textEncrypt">
+                    <textarea id="Escribe" class="fixed-size-text" cols="30" rows="10" placeholder="Escribe aquí..." ></textarea>
+                    <div class="infosection">
+                        <img id="infologo" src="img/info.png" alt="iconoinfo">
+                        <p>Solo letras minúsculas, sin acentos ni caracteres especiales</p>
+                    </div>
+                    <div class="botonesTE">
+                        <button class="mainEnDe" id="buttonEn" type="button" >
+                        <p>Encriptar</p>
+                        </button>
+                        <button class="mainEnDe" id="buttonDe" type="button">
+                        <p>Desencriptar</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resultados">
+                    <img class="waiting" id="waiting" src="img/reloj.png" alt="esperandotexto">
+                    <div class="textoReloj" id="mensajeresult">
+                        <p class="sinMensaje" id="sinMensaje">Ningún mensaje fue encontrado</p>
+                        <p class="indicacion" id="clausula">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <button class="copiar" id="copiar" type="button" disabled>
+                    <p>Copiar</p>
+                    </button>
+                </div>
+
+            </main>
+            <footer> 
+            <div class="ftexto">
+                <p class="develop">Developed by Clary Rebollar</p>
+                <p class="copy">&copy Copyright Clary Rebollar / Allura Latam -2024 </p>
+            </div>
+            </footer> 
+        </div>
+
+        <div id="customAlert" class="custom-alert">
+            <div class="custom-alert-content">
+                <span id="customAlertMessage"></span>
+                <button id="customAlertButton">OK</button>
+            </div>
+        </div>
+
+        
+        <div id="customAlert" class="custom-alert">
+            <div class="custom-alert-content">
+                <span id="customAlertMessage"></span>
+                <button id="customAlertButton">OK</button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
